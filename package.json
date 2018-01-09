@@ -1,6 +1,6 @@
 {
   "name": "html-webpack-template-literal-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "use es6 template literal to compile html file working with html-webpack-plugin",
   "main": "index.js",
   "scripts": {
