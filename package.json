@@ -1,0 +1,42 @@
+{
+  "name": "html-webpack-template-literal-plugin",
+  "version": "1.0.0",
+  "description": "use es6 template literal to compile html file working with html-webpack-plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/index.js"
+  },
+  "engines": {
+    "node": ">=4.8.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovetingyuan/html-webpack-template-literal-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html",
+    "html-webpack-plugin",
+    "template",
+    "literal",
+    "es6"
+  ],
+  "author": "tingyuan <baitu.huang@shopee.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovetingyuan/html-webpack-template-literal-plugin/issues"
+  },
+  "homepage": "https://github.com/lovetingyuan/html-webpack-template-literal-plugin#readme",
+  "dependencies": {
+    "html-loader": "^0.5.4",
+    "html-webpack-plugin": "^2.30.1",
+    "lodash.assign": "^4.2.0",
+    "lodash.isplainobject": "^4.0.6",
+    "lodash.values": "^4.3.0",
+    "object.values": "^1.0.4",
+    "raw-loader": "^0.5.1",
+    "tape": "^4.8.0",
+    "webpack": "^3.10.0"
+  }
+}
