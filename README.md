@@ -16,7 +16,7 @@ or
 
 ### usage
 
-1. specify `indexHtmlData` option in `html-webpack-plugin`
+1. specify **`indexHtmlData`** option in `html-webpack-plugin`
 2. use `html-webpack-template-literal-plugin`
 
 webpack.config.js
@@ -59,7 +59,7 @@ index.html
 ###  ❗️ matters needing attention
 **you must set a loader to process `index.html`**
 
-`html-loader` or `raw-loader` are both ok  
+for eg: `html-loader` or `raw-loader` are both ok  
 
 for detail, view https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md
 
