@@ -32,7 +32,7 @@ HtmlWebpackTemplateLiteralPlugin.prototype.apply = function (compiler) {
         assets: Object.keys(compilation.assets).filter(function (name) {
           return !/\.map$/i.test(name);
         }),
-        webpack: compilation.getStats(),
+        webpack: compilation.getStats().toJson(),
         webpackConfig: compilation.options,
         pluginAssets: assign({
           json: htmlPluginData.plugin.assetJson
