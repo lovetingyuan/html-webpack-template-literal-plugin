@@ -1,9 +1,16 @@
 
 ## html-webpack-template-literal-plugin
-use es6 template literal to compile html file that works with html-webpack-plugin
+
+<img src="https://github.com/webpack/media/blob/master/logo/logo-on-white-bg.png" alt="webpack-logo" width="320" >
+
+ 💝 use es6 template literal to compile html file that works with html-webpack-plugin
 
 ### install
 `npm install html-webpack-template-literal-plugin --save-dev`
+
+or
+
+`yarn add html-webpack-template-literal-plugin -D`
 
 ### usage
 ```javascript
@@ -25,7 +32,7 @@ const webpackConfig = {
 }
 ```
 
-### matters needing attention
+###  ❗️ matters needing attention
 **you must set a loader to process `index.html`**
 
 `html-loader` or `raw-loader` are both ok  
