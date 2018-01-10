@@ -1,11 +1,15 @@
 
 ## html-webpack-template-literal-plugin
 
-> <img src="https://img.shields.io/npm/v/html-webpack-template-literal-plugin.svg" alt="npm version" data-canonical-src="https://img.shields.io/npm/v/emojione.svg" style="max-width:100%;">
+ 💝 use es6 template literal to compile html file that works with html-webpack-plugin
+ 
+[![Version](https://img.shields.io/npm/v/html-webpack-template-literal-plugin.svg "version")](https://www.npmjs.com/package/html-webpack-template-literal-plugin)
+[![Dependencies](https://david-dm.org/lovetingyuan/html-webpack-template-literal-plugin/status.svg "dependencies")](https://david-dm.org/lovetingyuan/html-webpack-template-literal-plugin)
+[![License](https://img.shields.io/npm/l/html-webpack-template-literal-plugin.svg "License")](https://github.com/lovetingyuan/html-webpack-template-literal-plugin/blob/master/LICENSE)
 
 <img src="https://github.com/webpack/media/blob/master/logo/logo-on-white-bg.png" alt="webpack-logo" width="320" >
 
- 💝 use es6 template literal to compile html file that works with html-webpack-plugin
+
 
 ### install
 `npm install html-webpack-template-literal-plugin --save-dev`
