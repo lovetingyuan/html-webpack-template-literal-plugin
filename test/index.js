@@ -21,8 +21,7 @@ test('test simple webpack config', function (t) {
         template: '!!html-loader!test/index.html',
         indexHtmlData: {
           title: htmlTitle
-        },
-        compile: false
+        }
       }),
       new TemplateLiteralCompile()
     ]
