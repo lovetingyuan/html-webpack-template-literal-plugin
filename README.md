@@ -79,7 +79,7 @@ index.html
 ###  ❗️ NOTE
 **you must set a loader to process `index.html`**
 
-eg: `html-loader` or `raw-loader` are both ok  
+eg: [`html-loader`](https://github.com/webpack-contrib/html-loader) or [`raw-loader`](https://github.com/webpack-contrib/raw-loader) are both ok  
 
 for detail, view https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md
 
