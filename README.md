@@ -24,7 +24,7 @@ or
 1. specify **`indexHtmlData`** option in [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin/)
 2. use `html-webpack-template-literal-plugin`
 
-following values are available excepting `indexHtmlData`
+the following values are available besides the values in `indexHtmlData`
 
 ```javascript
 {
