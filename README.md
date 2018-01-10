@@ -2,7 +2,8 @@
 ## html-webpack-template-literal-plugin
 
  💝 use es6 template literal to compile html file that works with html-webpack-plugin
- 
+
+[![travis-ci](https://travis-ci.org/lovetingyuan/html-webpack-template-literal-plugin.svg?branch=master "CI")](https://travis-ci.org/lovetingyuan/html-webpack-template-literal-plugin)
 [![Version](https://img.shields.io/npm/v/html-webpack-template-literal-plugin.svg "version")](https://www.npmjs.com/package/html-webpack-template-literal-plugin)
 [![Dependencies](https://david-dm.org/lovetingyuan/html-webpack-template-literal-plugin/status.svg "dependencies")](https://david-dm.org/lovetingyuan/html-webpack-template-literal-plugin)
 [![License](https://img.shields.io/npm/l/html-webpack-template-literal-plugin.svg "License")](https://github.com/lovetingyuan/html-webpack-template-literal-plugin/blob/master/LICENSE)
