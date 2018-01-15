@@ -4,6 +4,7 @@ var path = require('path');
 var fs = require('fs');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var TemplateLiteralCompile = require('../index');
+
 var dist = path.resolve(__dirname, 'dist');
 var htmlTitle = 'this is title ' + Math.random();
 
