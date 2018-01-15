@@ -69,7 +69,7 @@ index.html
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>${title}</title>
-    <link rel="preload" href="${publicPath}${assets.find(v => /bundle/.test(v))}">
+    <link rel="preload" href="${publicPath}${assets.find(v => /main\.chunk/.test(v))}" as="script">
   </head>
   <body>
   </body>
@@ -79,9 +79,9 @@ index.html
 ###  ❗️ NOTE
 **you must set a loader to process `index.html`**
 
-eg: [`html-loader`](https://github.com/webpack-contrib/html-loader) or [`raw-loader`](https://github.com/webpack-contrib/raw-loader) are both ok  
+eg: [`html-loader`](https://github.com/webpack-contrib/html-loader) or [`raw-loader`](https://github.com/webpack-contrib/raw-loader) are both ok.  
 
-for detail, view https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md
+please view https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md for detail. 
 
 ### license
 MIT
