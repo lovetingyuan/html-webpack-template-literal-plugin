@@ -20,7 +20,7 @@ test('test simple webpack config', function (t) {
       new HtmlWebpackPlugin({
         inject: true,
         template: '!!html-loader!test/index.html',
-        indexHtmlData: {
+        templateData: {
           title: htmlTitle
         }
       }),

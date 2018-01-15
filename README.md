@@ -21,10 +21,10 @@ or
 
 ### usage
 
-1. specify **`indexHtmlData`** option in [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin/)
+1. specify **`templateData`** option in [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin/)
 2. use `html-webpack-template-literal-plugin`
 
-the following values are available besides the values in `indexHtmlData`
+the following values are available besides the values in `templateData`
 
 ```javascript
 {
@@ -51,7 +51,7 @@ const webpackConfig = {
       inject: true,
       template: '!!html-loader!index.html',
       // other config options
-      indexHtmlData: { // template literal data
+      templateData: { // template literal data
         title: 'this is title'
       }
     }),

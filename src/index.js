@@ -10,9 +10,9 @@ export default class HtmlWebpackTemplateLiteralPlugin {
   apply(compiler) {
     compiler.plugin('compilation', function (compilation) {
       compilation.plugin('html-webpack-plugin-before-html-processing', function (htmlPluginData, callback) {
-        let data = htmlPluginData.plugin.options.indexHtmlData;
+        let data = htmlPluginData.plugin.options.templateData || htmlPluginData.plugin.options.indexHtmlData;
         if (!isPlainObject(data)) {
-          console.warn('indexHtmlData option in HtmlWebpackTemplateLiteralPlugin must be an object');
+          console.warn('templateData option in HtmlWebpackTemplateLiteralPlugin must be an object');
           return callback();
         }
         data = assign({
