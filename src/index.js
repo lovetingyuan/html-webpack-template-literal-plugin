@@ -11,6 +11,7 @@ export default class HtmlWebpackTemplateLiteralPlugin {
     compiler.plugin('compilation', function (compilation) {
       compilation.plugin('html-webpack-plugin-before-html-processing', function (htmlPluginData, callback) {
         let data = htmlPluginData.plugin.options.templateData || htmlPluginData.plugin.options.indexHtmlData;
+        if (!data) { return callback(); }
         if (!isPlainObject(data)) {
           console.warn('templateData option in HtmlWebpackTemplateLiteralPlugin must be an object');
           return callback();
