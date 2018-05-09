@@ -1,3 +1,6 @@
+## 1.5.0
+* support both Webpack v3 and v4
+
 ## 1.2.0
 * Broken! change option `indexHtmlData` to `templateData`
 
