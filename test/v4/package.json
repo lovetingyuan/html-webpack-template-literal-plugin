@@ -1,0 +1,16 @@
+{
+  "name": "v4",
+  "version": "1.0.0",
+  "description": "test html-webpack-template-literal-plugin with webpack v4",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "keywords": [],
+  "author": "tingyuan",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.8.1",
+    "html-webpack-plugin": "^3.2.0"
+  }
+}

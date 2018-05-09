@@ -57,4 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
-test/dist/
+test/*/dist/
+test/*/node_modules/
+

@@ -3,13 +3,23 @@ import values from 'lodash.values';
 import assign from 'lodash.assign';
 import assert from 'assert';
 
+const pluginName = 'html-webpack-template-literal-plugin';
 export default class HtmlWebpackTemplateLiteralPlugin {
   constructor(options) {
     assert.equal(options, undefined, 'HtmlWebpackTemplateLiteralPlugin: Please set options in html-webpack-plugin');
   }
   apply(compiler) {
-    compiler.plugin('compilation', function (compilation) {
-      compilation.plugin('html-webpack-plugin-before-html-processing', function (htmlPluginData, callback) {
+    const hookRegister = compiler.hooks ? compiler.hooks.compilation.tap.bind(compiler.hooks.compilation, pluginName) :
+      compiler.plugin.bind(compiler, 'compilation');
+    hookRegister(function (compilation) {
+      let compilationHookRegister;
+      if (compilation.hooks) {
+        const processHtmlHook = compilation.hooks.htmlWebpackPluginBeforeHtmlProcessing;
+        compilationHookRegister = processHtmlHook.tapAsync.bind(processHtmlHook, pluginName);
+      } else {
+        compilationHookRegister = compilation.plugin.bind(compilation, 'html-webpack-plugin-before-html-processing');
+      }
+      compilationHookRegister(function(htmlPluginData, callback) {
         let data = htmlPluginData.plugin.options.templateData || htmlPluginData.plugin.options.indexHtmlData;
         if (!data) { return callback(); }
         if (!isPlainObject(data)) {
