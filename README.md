@@ -77,11 +77,13 @@ index.html
 ```
 
 ###  ⚠️ NOTE
-**you must set a loader to process `index.html`**
+**You must set a loader to process `index.html`**
 
-eg: [`html-loader`](https://github.com/webpack-contrib/html-loader) or [`raw-loader`](https://github.com/webpack-contrib/raw-loader) are both ok.  
+eg: [`raw-loader`](https://github.com/webpack-contrib/raw-loader) or [`html-loader`](https://github.com/webpack-contrib/html-loader) are both ok.  
 
-please view https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md for detail. 
+Please view https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md for detail. 
+
+Pay attention to possible [`XSS`](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting) attack and make sure the `templateData` is reliable
 
 ### license
 MIT
