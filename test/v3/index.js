@@ -8,7 +8,7 @@ var TemplateLiteralCompile = require('../../index');
 var dist = path.resolve(__dirname, 'dist');
 var htmlTitle = 'this is title ' + Math.random();
 
-test('test simple webpack config', function (t) {
+test('test simple webpack v3 config', function (t) {
   var config = {
     entry: path.resolve(__dirname, 'app.js'),
     output: {

@@ -8,12 +8,10 @@ var TemplateLiteralCompile = require('../../index');
 var dist = path.resolve(__dirname, 'dist');
 var htmlTitle = 'this is title ' + Math.random();
 
-test('test simple webpack config', function (t) {
+test('test simple webpack v4 config', function (t) {
   var config = {
     output: {
-      filename: 'bundle.js',
-      path: dist,
-      publicPath: '/'
+      publicPath: '/cdn/'
     },
     plugins: [
       new HtmlWebpackPlugin({
@@ -35,7 +33,7 @@ test('test simple webpack config', function (t) {
     t.equal(ret[1], htmlTitle);
     ret = htmlContent.match(/rel="preload" href="(.+)"/);
     t.equal(Array.isArray(ret), true);
-    t.equal(ret[1], config.output.publicPath + config.output.filename);
+    t.equal(ret[1], config.output.publicPath + 'main.js');
     t.end();
   });
 });
