@@ -77,9 +77,7 @@ index.html
 ```
 
 ###  ⚠️ NOTE
-**You must set a loader to process `index.html`**
-
-eg: [`raw-loader`](https://github.com/webpack-contrib/raw-loader) or [`html-loader`](https://github.com/webpack-contrib/html-loader) are both ok.  
+**You must set a loader to process `index.html`**, eg: [`raw-loader`](https://github.com/webpack-contrib/raw-loader) or [`html-loader`](https://github.com/webpack-contrib/html-loader) are both ok.
 
 Please view https://github.com/jantimon/html-webpack-plugin/blob/master/docs/template-option.md for detail. 
 
